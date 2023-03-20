@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css?family=Jost:400,300,500");
+
+.pantryApp {
+    width: 150px;
+    height: 120px;
+    left: 0px;
+    top: 5px;
+
+    background: url(PantryApp.png);
+}
+.first-page {
+    align-items: flex-start;
+    background-color: #ffffff;
+    border: 1px none;
+    display: flex;
+    height: 485px;
+    padding: 5px 0;
+    width: 952px;
+}
+
+.group-1 {
+    align-items: flex-start;
+    display: flex;
+    gap: 60px;
+    height: 24px;
+    left: 160px;
+    top: 30px;
+}
+
+.group-1 li {
+    list-style: none;
+}
+
+.group-1 li a {
+    text-decoration: none;
+    color: black;
+}
+
+.about-us {
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 23px;
+    width: 63px;
+    text-decoration: none;
+    
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+
+    color: #000000;
+}
+
+.recipes {
+    align-self: flex-end;
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 23px;
+    width: 54px;
+    text-decoration: none;
+    
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+
+    color: #000000;
+}
+
+.pantry{
+    align-self:flex-end;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 0;
+    min-height: 23px;
+    width: 42px;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+
+    color: #000000;
+    
+}
+
+.shopping-list {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 0;
+    min-height: 23px;
+    width: 94px;
+    
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+
+    color: #000000;
+}
+
+.overlap-group-container {
+    height: 430px;
+    position: relative;
+    width: 946px;
+}
+
+.welcome {
+    position: absolute;
+    width: 267px;
+    height: 130px;
+    left: 200px;
+    top: 101px;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 65px;
+
+    color: #000000;
+}
+
+.shop-cook {
+    position: absolute;
+    width: 395px;
+    height: 46px;
+    left: 200px;
+    top: 265px;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 46px;
+
+    color: #46CB05;
+}
+
+.get-started {
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 15px;
+    text-align: center;
+    height: 10px;
+    top: 20px;
+    left: 60px;
+    width: 119px;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+ }
+
+.overlap-group-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 11px 15px;
+    gap: 10px;
+
+    position: absolute;
+    width: 212px;
+    height: 45px;
+    left: 200px;
+    top: 400px;
+
+    background: #46CB05;
+    border: 1px solid #46CB05;
+    backdrop-filter: blur(2px);
+
+    border-radius: 4px;
+}
+
+.group-2 {
+    align-items: flex-start;
+    display: flex;
+    position: absolute;
+    width: 77.72px;
+    height: 24px;
+    left: 75em;
+    top: 18px;
+}
+
+.log-in {
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 22px;
+    width: 62px;
+    
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+
+    color: #000000;
+}
+
+.sign-up {
+    left: 100px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center;
+    height: 17px;
+    width: 133px;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+
+    color: #000000;
+}
