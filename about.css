@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Jost:400,300,500");
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    height: 150px;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+}
+
+.nav-list {
+    width: 55%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.rightnav {
+    width: 25%;
+    text-align: right;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.about_body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.image_container{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_image {
+    border-radius: 2px;
+    height: 348px;
+    width: 552px;
+}
+
+.about_text_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:50%;
+    padding: 30px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 65px;
+
+    color: #000000;
+}
+
+.paragraph {
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 46px;
+    padding: inherit;
+
+    color: #000000;
+}
+
+
+
+.contact_us_button {
+    display: flex;
+    align-self: center;
+
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+
+    padding: 10px;
+
+    background: #46CB05;
+    border: 1px solid #46CB05;
+    backdrop-filter: blur(2px);
+}
+
+
+.contact_us_text {
+    display: flex;
+    align-content: center;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;    
+}
+
