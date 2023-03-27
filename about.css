@@ -69,8 +69,8 @@ a {
 
 .about_image {
     border-radius: 2px;
-    height: 348px;
-    width: 552px;
+    height: auto;
+    width: 100%;
 }
 
 .about_text_div {

@@ -1,41 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Jost:400,300,500");
 
-.pantryApp {
-    height: 120px;
-    width: 200px;
-
-    background: url(PantryApp.png);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
-    top: 0;
     cursor: pointer;
+
+    height: 150px;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .logo img {
-    width: 180px;
-    border-radius: 50px;
+    width: 150px;
+    height: 150px;
 }
 
 .nav-list {
-    width: 60%;
+    width: 55%;
     display: flex;
-    gap: 60px;
+    gap: 50px;
     align-items: center;
 }
 
@@ -48,16 +36,16 @@
     color: black;
     font-family: 'Jost';
     font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 20px;
+    line-height: 20px;
 }
 
 .rightnav {
-    width: 30%;
+    width: 25%;
     text-align: right;
     font-family: 'Jost';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 23px;
 }
 
