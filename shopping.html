@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="general.css" rel="stylesheet">
+    <link href="shopping.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -23,6 +23,117 @@
             <div class="sign-up jost-normal-black-16px"><a href="signup.html">Sign Up</a></div>
         </div>
     </nav>
-    
+
+
+    <div>
+        <h3 class="title">Shopping List</h3>
+        <ul class="add-button-list">
+            <add-button>
+                <a>Add Product</a>
+            </add-button>
+            <add-button>
+                <a>Add Category</a>
+            </add-button>
+        </ul>
+        <ul class="tag-list">
+            <select-button>
+                <a>All</a>
+            </select-button>
+            <tag-button>
+                <a>Fridge</a>
+            </tag-button>
+            <tag-button>
+                <a>Freezer</a>
+            </tag-button>
+            <tag-button>
+                <a>Canned Food</a>
+            </tag-button>
+            <tag-button>
+                <a>Dry Food</a>
+            </tag-button>
+            <tag-button>
+                <a>Meat</a>
+            </tag-button>
+        </ul>
+    </div>
+    <div style="width:800px; margin:0 auto;">
+    <table class="pf-c-table pf-m-grid-lg" role="grid" aria-label="Shopping list">
+        <caption>
+            &nbsp;
+            <button id="check-all-button" class="pf-c-button pf-m-primary" type="button">
+                Check all
+            </button>
+            <button id="uncheck-all-button" class="pf-c-button pf-m-secondary" type="button">
+                Uncheck all
+            </button>
+        </caption>
+        <thead>
+        <tr>
+            <td />
+            <th scope="col">
+                Item
+            </th>
+            <th scope="col">
+                Quantity
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="pf-c-table__check">
+                <input type="checkbox" name="sugar" aria-labelledby="item-1-sugar" />
+            </td>
+            <th data-label="Item">
+                <div id="item-1-sugar">Sugar</div>
+            </th>
+            <td data-label="Quantity">
+                1 cup
+            </td>
+        </tr>
+        <tr>
+            <td class="pf-c-table__check">
+                <input type="checkbox" name="butter" aria-labelledby="item-2-butter" />
+            </td>
+            <th data-label="Item">
+                <div id="item-2-butter">Butter</div>
+            </th>
+            <td data-label="Quantity">
+                ½ cup
+            </td>
+        </tr>
+        <tr class="checked">
+            <td class="pf-c-table__check">
+                <input type="checkbox" name="eggs" aria-labelledby="item-3-eggs" checked />
+            </td>
+            <th data-label="Item">
+                <div id="item-3-eggs">Eggs</div>
+            </th>
+            <td data-label="Quantity">
+                2
+            </td>
+        </tr>
+        <tr>
+            <td class="pf-c-table__check">
+                <input type="checkbox" name="milk" aria-labelledby="item-4-milk" />
+            </td>
+            <th data-label="Item">
+                <div id="item-4-milk">Milk</div>
+            </th>
+            <td data-label="Quantity">
+                ½ cup
+            </td>
+        </tr>
+        </tbody>
+    </table>
+        <caption>
+            &nbsp;
+            <button class="pf-c-button pf-m-primary" type="button">
+                Clear shopping list
+            </button>
+            <button class="pf-c-button pf-m-secondary" type="button">
+                Print shopping list
+            </button>
+        </caption>
+    </div>
 </body>
 </html>

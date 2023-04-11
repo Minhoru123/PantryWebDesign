@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Jost:400,300,500");
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    height: 150px;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+}
+
+.nav-list {
+    width: 55%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.rightnav {
+    width: 25%;
+    text-align: right;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+table tr.checked {
+    text-decoration: line-through;
+    background-color: #ebebeb;
+}
+
+tbody {
+    display: block;
+    overflow-y: auto;
+    height: 200px;
+    margin: 0px;
+    padding: 10px;
+}
+
+tr {
+    display: table;
+    width: 26%;
+    table-layout: fixed;
+}
+
+
+button {
+    flex-direction: row;
+    align-items: flex-start;
+
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 3px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+
+    background: #46CB05;
+    border: 1px solid #46CB05;
+
+    border-radius: 4px;
+}
+
+add-button {
+    flex-direction: row;
+    align-items: flex-start;
+
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 3px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+
+    background: #b3cf91;
+    border: 1px solid #b3cf91;
+
+    border-radius: 4px;
+}
+
+select-button {
+    flex-direction: row;
+    align-items: flex-start;
+
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 3px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+
+    background: lightgreen;
+    border: 1px solid black;
+
+    border-radius: 4px;
+}
+
+tag-button {
+    flex-direction: row;
+    align-items: flex-start;
+
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 3px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+
+    background: lightgrey;
+    border: 1px solid lightgrey;
+
+    border-radius: 4px;
+}
+
+.homeimage {
+    float: right;
+    margin: 5 25 5 15px;
+}
+
+.title {
+    padding-left: 10%;
+    color: #719842;
+    font-family: 'Jost';
+}
+
+.add-button-list {
+    padding-right: 10%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2%;
+    font-family: 'Jost';
+}
+
+.tag-list {
+    padding-left: 10%;
+    display: flex;
+    gap: 5%;
+    font-family: 'Jost';
+}
+
+
+
+
