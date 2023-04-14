@@ -11,72 +11,103 @@
     <link href="newRecipe.css" rel="stylesheet">
     <title>Add New Recipe</title>
 </head>
-<body>
-    <nav class="navbar">
-        <ul class="nav-list">
-            <div class="logo">
-                <a href="home.html"><img class="pantryApp" src="PantryWithNoBack.png" alt="PantryLogo"></a>
-            </div>
-            <li class="about-us jost-normal-black-16px"><a href="about.html">About Us</a></li>
-            <li class="recipes jost-normal-black-16px"><a style="text-decoration: none;" href=recipes.html>Recipes</a></li>
-            <li class="pantry jost-normal-black-16px"><a style="text-decoration: none;" href=pantry.html>Pantry</a></li>
-            <li class="shopping-list jost-normal-black-16px"><a style="text-decoration: none;" href="shopping.html">Shopping List</a></li>
-        </ul>
-        <div class="rightnav">
-            <div class="log-in jost-normal-black-16px"><a href="login.html">Log In</a></div>
-            <div class="sign-up jost-normal-black-16px"><a href="signup.html">Sign Up</a></div>
-        </div>
-    </nav>
-
-    <div class="body_section">
-        <div class="left_section">
-            <ul class="filters_section">
-                <h4 class="filters_section_label">Filter Recipes</h4>
-                <li class="filters_section_label">Diet</li>
-                <li class="filter">Dairy-Free</li>
-                <li class="filter">Egg-Free</li>
-                <li class="filter">Sugar-Free</li>
-                <li class="filter">Gluten-Free</li>
-                <li class="filter">Allergies</li>
-                <li class="filter">Gluten</li>
-                <li class="filter">Legumes</li>
-                <li class="filter">Grain</li>
-                <li class="filter">Fruit</li>
-                <li class="filters_section_label">Cuisines</li>
-                <li class="filter">Mexican</li>
-                <li class="filter">Italian</li>
-                <li class="filter">Asian</li>
-            </ul>
-        </div>
-    
-        <div class="middle_section">
-            <form action="#" id="new_recipe_form">
-                <div class="col_1">
-                    <h2>Add New Recipe</h2><br>
-                    <button class="imageButton"><i class="fa fa-camera"></i></button><br>
-                    <textarea name="Ingredients" placeholder="Ingredients" cols="40" rows="15"></textarea>
+    <body>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <div class="logo">
+                    <a href="home.html"><img class="pantryApp" src="PantryWithNoBack.png" alt="PantryLogo"></a>
                 </div>
+                <li class="about-us jost-normal-black-16px"><a href="about.html">About Us</a></li>
+                <li class="recipes jost-normal-black-16px"><a style="text-decoration: none;" href=recipes.html>Recipes</a></li>
+                <li class="pantry jost-normal-black-16px"><a style="text-decoration: none;" href=pantry.html>Pantry</a></li>
+                <li class="shopping-list jost-normal-black-16px"><a style="text-decoration: none;" href="shopping.html">Shopping List</a></li>
+            </ul>
+            <div class="rightnav">
+                <div class="log-in jost-normal-black-16px"><a href="login.html">Log In</a></div>
+                <div class="sign-up jost-normal-black-16px"><a href="signup.html">Sign Up</a></div>
+            </div>
+        </nav>
 
-                <div class="col_2">
-                    <h2 style="visibility: hidden;">placeholder</h2><br>
-                    <input type="text" placeholder="Recipe Name" id="recipe_name"><br>
-                    <textarea name="Preparation" placeholder="Preparation" cols="80" rows="15" id="preparation"></textarea><br>
-
-                    <br>
-                    <div class="tags">
-                        <button class="tag">Breakfast</button>
-                        <button class="tag">Lunch</button>
-                        <button class="tag">Dinner</button>
-                        <button class="tag">Snack</button>
+        <div class="body_section">
+            <div class="left_section">
+                <ul class="filters_section">
+                    <h4 class="filters_section_label">Filter Recipes</h4>
+                    <li class="filters_section_label">Diet</li>
+                    <li class="filter">Dairy-Free</li>
+                    <li class="filter">Egg-Free</li>
+                    <li class="filter">Sugar-Free</li>
+                    <li class="filter">Gluten-Free</li>
+                    <li class="filter">Allergies</li>
+                    <li class="filter">Gluten</li>
+                    <li class="filter">Legumes</li>
+                    <li class="filter">Grain</li>
+                    <li class="filter">Fruit</li>
+                    <li class="filters_section_label">Cuisines</li>
+                    <li class="filter">Mexican</li>
+                    <li class="filter">Italian</li>
+                    <li class="filter">Asian</li>
+                </ul>
+            </div>
+        
+            <div class="middle_section">
+                <form action="#" id="new_recipe_form">
+                    <div class="col_1">
+                        <h2>Add New Recipe</h2><br>
+                        <button class="imageButton" id="imageButton" onclick="uploadImage()"><i class="fa fa-camera"></i></button><br>
+                        <textarea name="Ingredients" placeholder="Ingredients" cols="40" rows="15"></textarea>
                     </div>
 
-                    <br>
-                    <br><br>
-                    <button id="save_new_recipe">Save</button>
-                </div>
-            </form>
-        </div>
+                    <div class="col_2">
+                        <h2 style="visibility: hidden;">placeholder</h2><br>
+                        <input type="text" placeholder="Recipe Name" id="recipe_name"><br>
+                        <textarea name="Preparation" placeholder="Preparation" cols="80" rows="15" id="preparation"></textarea><br>
 
+                        <br>
+                        <div class="tags">
+                            <button class="tag">Breakfast</button>
+                            <button class="tag">Lunch</button>
+                            <button class="tag">Dinner</button>
+                            <button class="tag">Snack</button>
+                        </div>
 
+                        <br>
+                        <br><br>
+                        <button id="save_new_recipe" onclick="saveRecipe()">Save</button>
+                    </div>
+                </form>
+            </div>
+    </body>
+</html>
 
-</body>
+<script>
+    function saveRecipe() {
+        alert("Recipe saved!")
+    }
+
+    function uploadImage() {
+        const fileInput = document.getElementById('fileUpload');
+        const imageContainer = document.getElementById('imageButton');
+
+        // Check if a file is selected
+        if (fileInput.files && fileInput.files[0]) {
+            // Create a new FileReader object
+            const reader = new FileReader();
+
+            // Set the FileReader object to read the selected file
+            reader.onload = (e) => {
+                // Create a new image element
+                const image = document.createElement('img');
+
+                // Set the image source to the data URL of the selected file
+                image.src = e.target.result;
+
+                // Add the image to the image container
+                imageContainer.appendChild(image);
+            }
+
+            // Read the selected file as a data URL
+            reader.readAsDataURL(fileInput.files[0]);
+        }
+    }
+
+</script>
