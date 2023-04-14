@@ -1,0 +1,113 @@
+
+.body_section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.left_section {
+    display: block;
+    flex-direction: column;
+    width: 20%;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.middle_section {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+p {
+    margin: 0.1em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+.filters_section {
+    list-style: none;
+    font-size: 1.25em;
+}
+
+.filters_section_label {
+    color: #84BD00;
+    padding-left: 5px;
+}
+
+.filter {
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.filter:hover {
+    color: #84BD00;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+h2 {
+    color: #84BD00;
+    font-size: 1.5em;
+}
+
+a {
+    margin: 2px;
+}
+
+button {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    background-color: #CBEBBB;
+    border: 1px solid #CBEBBB;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-size: 17px;
+    text-align: center;
+
+    border-radius: 4px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+#addNew:hover, .additional_details:hover{
+    background-color: #a4c594;
+}
+
+.cuisine_images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+
+.food_img {
+    width: 30%;
+    border-radius: 4px;
+}
+
+.recipe_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.details {
+    width: 30%;
+}
+
+.recipe_info h3 {
+    color: #46CB05;
+    font-size: 1.75em;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px 10px #AAAAAA;
+}
