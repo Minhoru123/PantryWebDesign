@@ -53,7 +53,11 @@
                 <form action="#" id="new_recipe_form">
                     <div class="col_1">
                         <h2>Add New Recipe</h2><br>
-                        <button class="imageButton" id="imageButton" onclick="uploadImage()"><i class="fa fa-camera"></i></button><br>
+
+                        <label for="imageUpload" class="imageButton" id="imageContainer"><i class="fa fa-camera"></i></label>
+                        <input type="file" id="imageUpload" onchange="displayImage(this)" style="visibility: hidden;" accept="image/*">
+                        <!-- <div id="imageContainer"></div> -->
+                        <br>
                         <textarea name="Ingredients" placeholder="Ingredients" cols="40" rows="15"></textarea>
                     </div>
 
@@ -84,30 +88,59 @@
         alert("Recipe saved!")
     }
 
-    function uploadImage() {
-        const fileInput = document.getElementById('fileUpload');
-        const imageContainer = document.getElementById('imageButton');
+    function selectImage() {
+    // Create a new file input element
+    var fileInput = document.createElement('input');
+    fileInput.type = 'file';
+    fileInput.accept = 'image/*';
+    fileInput.onchange = function() { displayImage(this); };
 
-        // Check if a file is selected
-        if (fileInput.files && fileInput.files[0]) {
-            // Create a new FileReader object
-            const reader = new FileReader();
+    // Trigger the file input dialog
+    fileInput.click();
+}
 
-            // Set the FileReader object to read the selected file
-            reader.onload = (e) => {
-                // Create a new image element
-                const image = document.createElement('img');
+function displayImage(input) {
+    var imageContainer = document.getElementById('imageContainer');
 
-                // Set the image source to the data URL of the selected file
-                image.src = e.target.result;
+    // Check if a file is selected
+    if (input.files && input.files[0]) {
+        // Create a new FileReader object
+        var reader = new FileReader();
 
-                // Add the image to the image container
-                imageContainer.appendChild(image);
-            }
+        // Set the FileReader object to read the selected file
+        reader.onload = function(e) {
+            // Create a new image element
+            var image = document.createElement('img');
 
-            // Read the selected file as a data URL
-            reader.readAsDataURL(fileInput.files[0]);
+            // Set the image source to the data URL of the selected file
+            image.src = e.target.result;
+
+            // Set the image width and height to fit the image container
+            image.onload = function() {
+                var width = image.width;
+                var height = image.height;
+                var containerWidth = imageContainer.offsetWidth;
+                var containerHeight = imageContainer.offsetHeight;
+                var scale = Math.min(containerWidth/width, containerHeight/height);
+                image.width = width * scale;
+                image.height = height * scale;
+                
+            };
+
+            // Add the image to the image container
+            imageContainer.innerHTML = '';
+            imageContainer.style.padding = "0px";
+            imageContainer.style.backgroundColor = "#FFFFFF";
+            imageContainer.style.border = "none";
+            imageContainer.style.marginBottom = "15%";
+            image.style.borderRadius = "8px";
+            image.style.border = "2px solid black";
+            imageContainer.appendChild(image);
         }
+
+        // Read the selected file as a data URL
+        reader.readAsDataURL(input.files[0]);
     }
+}
 
 </script>
