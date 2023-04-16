@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="PantryApp.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="general.css" rel="stylesheet">
-    <title>Document</title>
+    <link href="recipes.css" rel="stylesheet">
+    <title>Recipes</title>
 </head>
 <body>
     <nav class="navbar">
@@ -23,6 +26,61 @@
             <div class="sign-up jost-normal-black-16px"><a href="signup.html">Sign Up</a></div>
         </div>
     </nav>
+
+    <div class="body_section">
+        <div class="left_section">
+            <ul class="filters_section">
+                <h4 class="filters_section_label">Filter Recipes</h4>
+                <li class="filters_section_label">Diet</li>
+                <li class="filter">Dairy-Free</li>
+                <li class="filter">Egg-Free</li>
+                <li class="filter">Sugar-Free</li>
+                <li class="filter">Gluten-Free</li>
+                <li class="filter">Allergies</li>
+                <li class="filter">Gluten</li>
+                <li class="filter">Legumes</li>
+                <li class="filter">Grain</li>
+                <li class="filter">Fruit</li>
+                <li class="filters_section_label">Cuisines</li>
+                <li class="filter">Mexican</li>
+                <li class="filter">Italian</li>
+                <li class="filter">Asian</li>
+            </ul>
+        </div>
+    
+        <div class="middle_section">
+            <h2>My Recipes</h2>
+            <button id="addNew">
+                <a href="newRecipe.html">Add new</a>
+            </button>
+            <div class="cuisine_images">
+                <img src="images/thaiFood.png" alt="Thai Basil Tofu Stir Fry" class="food_img">
+                <img src="images/chineseFood.png" alt="Kung Pao Shrimp" class="food_img">
+                <img src="images/mexicanFood.png" alt="Mexican Chicken" class="food_img">
+            </div>
+
+            <div class="recipe_info">
+                <div class="details">
+                    <h3>Thai</h3>
+                    <p>Thai Basil Tofu Stir Fry</p><br>
+                    <p><i class="fa fa-clock-o" style="font-size:18px"></i> 30 minutes </p>
+                    <button class="additional_details">More details</button>
+                </div>
+                <div class="details">
+                    <h3>Chinese</h3>
+                    <p>Kung Pao Shrimp</p><br>
+                    <p><i class="fa fa-clock-o" style="font-size:18px"></i> 45 minutes </p>
+                    <button class="additional_details">More details</button>
+                </div>
+                <div class="details">
+                    <h3>Mexican</h3>
+                    <p>Mexican Chicken</p><br>
+                    <p><i class="fa fa-clock-o" style="font-size:18px"></i> 40 minutes </p>
+                    <button class="additional_details">More details</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
