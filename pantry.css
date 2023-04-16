@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Jost:400,300,500");
+
+button {
+    flex-direction: row;
+    align-items: flex-start;
+    
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 3px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+
+    background: #46CB05;
+    border: 1px solid #46CB05;
+
+    border-radius: 4px;
+}
+
+add-button {
+    flex-direction: row;
+    align-items: flex-start;
+
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 3px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+
+    background: #b3cf91;
+    border: 1px solid #b3cf91;
+
+    border-radius: 4px;
+}
+
+tag-button {
+    flex-direction: row;
+    align-items: flex-start;
+
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 3px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+
+    background: lightgrey;
+    border: 1px solid lightgrey;
+
+    border-radius: 4px;
+}
+
+.homeimage {
+    float: right;
+    margin: 5 25 5 15px;
+}
+
+.title {
+    padding-left: 10%;
+    color: #719842;
+    font-family: 'Jost';
+}
+
+.add-button-list {
+    padding-right: 10%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2%;
+    font-family: 'Jost';
+}
+
+.tag-list {
+    padding-left: 10%;
+    display: flex;
+    gap: 5%;
+    font-family: 'Jost';
+}
+
+
+
+

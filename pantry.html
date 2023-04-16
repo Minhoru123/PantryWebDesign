@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="general.css" rel="stylesheet">
+    <link href="pantry.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -19,10 +20,46 @@
             <li class="shopping-list jost-normal-black-16px"><a style="text-decoration: none;" href="shopping.html">Shopping List</a></li>
         </ul>
         <div class="rightnav">
-            <div class="log-in jost-normal-black-16px"><a href="login.html">Log In</a></div>
-            <div class="sign-up jost-normal-black-16px"><a href="signup.html">Sign Up</a></div>
+            <div class="log-in jost-normal-black-16px"><a href="login.html"><img src="usericon.png"> Log In</a></div>
+            <div class="sign-up jost-normal-black-16px">
+                <button>
+                    <a href="signup.html">Sign Up</a>
+                </button>
+            </div>
         </div>
     </nav>
+
+    <div>
+        <h3 class="title">My Pantry</h3>
+        <ul class="add-button-list">
+            <add-button>
+                <a>Add Product</a>
+            </add-button>
+            <add-button>
+                <a>Add Category</a>
+            </add-button>
+        </ul>
+        <ul class="tag-list">
+            <tag-button>
+                <a>All</a>
+            </tag-button>
+            <tag-button>
+                <a>Fridge</a>
+            </tag-button>
+            <tag-button>
+                <a>Freezer</a>
+            </tag-button>
+            <tag-button>
+                <a>Canned Food</a>
+            </tag-button>
+            <tag-button>
+                <a>Dry Food</a>
+            </tag-button>
+            <tag-button>
+                <a>Legumes</a>
+            </tag-button>
+        </ul>
+    </div>
     
 </body>
 </html>
