@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Pantry Find Recipes</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="about.css" rel="stylesheet">
-    <title>Pantry Find Recipes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <nav class="navbar">
+        <div class="logo">
+            <a href="home.html"><img class="pantryApp" src="images/PantryWithNoBack.png" alt="PantryLogo"></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <ul class="nav-list">
-            <div class="logo">
-                <a href="home.html"><img class="pantryApp" src="images/PantryWithNoBack.png" alt="PantryLogo"></a>
-            </div>
-            <li class="about-us jost-normal-black-16px"><a href="about.html">About Us</a></li>
-            <li class="recipes jost-normal-black-16px"><a style="text-decoration: none;" href=recipes.html>Recipes</a></li>
-            <li class="pantry jost-normal-black-16px"><a style="text-decoration: none;" href=pantry.html>Pantry</a></li>
-            <li class="shopping-list jost-normal-black-16px"><a style="text-decoration: none;" href="shopping.html">Shopping List</a></li>
+            <li class="about-us jost-normal-black-16px">
+                <a href="about.html">About Us</a></li>
+            <li class="recipes jost-normal-black-16px">
+                <a style="text-decoration: none;" href=recipes.html>Recipes</a></li>
+            <li class="pantry jost-normal-black-16px">
+                <a style="text-decoration: none;" href=pantry.html>Pantry</a></li>
+            <li class="shopping-list jost-normal-black-16px">
+                <a style="text-decoration: none;" href="shopping.html">Shopping List</a></li>
         </ul>
         <div class="rightnav">
             <div class="log-in jost-normal-black-16px"><a href="login.html">Log In</a></div>
             <div class="sign-up jost-normal-black-16px"><a href="signup.html">Sign Up</a></div>
         </div>
     </nav>
+
     <div class="about_body">
         <div class="image_container">
             <img class="about_image" src="images/Strawberry.png" alt="Strawberry"/>
