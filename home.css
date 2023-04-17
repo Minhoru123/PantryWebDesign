@@ -72,6 +72,7 @@ button {
 }
 
 .welcome {
+    display: flex;
     position: absolute;
     width: 267px;
     height: 200px;

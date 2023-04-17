@@ -104,8 +104,8 @@ add-button {
     font-weight: 300;
     font-size: 17px;
 
-    background: #b3cf91;
-    border: 1px solid #b3cf91;
+    background: #46CB05;
+    border: 1px solid #46CB05;
 
     border-radius: 4px;
 }
@@ -157,6 +157,7 @@ tag-button {
     padding-left: 10%;
     color: #719842;
     font-family: 'Jost';
+    font-size: 1.5em;
 }
 
 .add-button-list {

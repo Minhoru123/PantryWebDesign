@@ -106,8 +106,9 @@ h4 {
 }
 
 h2 {
-    color: #84BD00;
+    color: #719842;;
     font-size: 1.5em;
+    font-family: 'Jost';
 }
 
 a {
@@ -159,7 +160,8 @@ button {
 }
 
 .recipe_info h3 {
-    color: #46CB05;
+    background: #b3cf91;
+    border: 1px solid #b3cf91;
     font-size: 1.75em;
     font-family: sans-serif;
     font-weight: 400;
