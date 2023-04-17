@@ -53,3 +53,23 @@ a {
     text-decoration: none;
     color: #000000;
 }
+
+button {
+    flex-direction: row;
+    align-items: flex-start;
+    
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 3px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+
+    background: #46CB05;
+    border: 1px solid #46CB05;
+
+    border-radius: 4px;
+}
+

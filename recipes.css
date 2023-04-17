@@ -64,8 +64,8 @@ button {
     display: inline-block;
     width: fit-content;
     height: fit-content;
-    background-color: #CBEBBB;
-    border: 1px solid #CBEBBB;
+    background: #46CB05;
+    border: 1px solid #46CB05;
 
     font-family: 'Jost';
     font-style: normal;
@@ -73,7 +73,7 @@ button {
     text-align: center;
 
     border-radius: 4px;
-    margin-top: 5%;
+    margin-top: 3%;
     cursor: pointer;
 }
 
