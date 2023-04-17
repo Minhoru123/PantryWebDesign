@@ -8,7 +8,7 @@
 
 .image_container{
     display: flex;
-    width: 100%;
+    width: 50%;
     align-items: center;
     justify-content: center;
 }
@@ -16,8 +16,8 @@
 .about_image {
     margin-left: 10px;
     border-radius: 2px;
-    height: 65%;
-    width: 65%;
+    height: 464px;
+    width: 736px;
 }
 
 .about_text_div {
@@ -47,7 +47,8 @@
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
-    padding: inherit;
+    padding-left: 100px;
+    padding-right: 100px;
 
     color: #000000;
 }
