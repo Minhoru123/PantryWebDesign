@@ -1,58 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Jost:400,300,500");
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-
-    height: 150px;
-}
-
-.logo {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.logo img {
-    width: 150px;
-    height: 150px;
-}
-
-.nav-list {
-    width: 55%;
-    display: flex;
-    gap: 50px;
-    align-items: center;
-}
-
-.nav-list li {
-    list-style: none;
-}
-
-.nav-list li a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Jost';
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-}
-
-.rightnav {
-    width: 25%;
-    text-align: right;
-    font-family: 'Jost';
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-}
-
-a {
-    text-decoration: none;
-    color: #000000;
-}
 .body_section {
     display: flex;
     flex-direction: row;

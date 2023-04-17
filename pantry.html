@@ -4,29 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="general.css" rel="stylesheet">
     <link href="pantry.css" rel="stylesheet">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="nav-list">
-            <div class="logo">
-                <a href="home.html"><img class="pantryApp" src="images/PantryWithNoBack.png" alt="PantryLogo"></a>
-            </div>
-            <li class="about-us jost-normal-black-16px"><a href="about.html">About Us</a></li>
-            <li class="recipes jost-normal-black-16px"><a style="text-decoration: none;" href=recipes.html>Recipes</a></li>
-            <li class="pantry jost-normal-black-16px"><a style="text-decoration: none;" href=pantry.html>Pantry</a></li>
-            <li class="shopping-list jost-normal-black-16px"><a style="text-decoration: none;" href="shopping.html">Shopping List</a></li>
-        </ul>
-        <div class="rightnav">
-            <div class="log-in jost-normal-black-16px"><a href="login.html"><img src="images/usericon.png"> Log In</a></div>
-            <div class="sign-up jost-normal-black-16px">
-                <button>
-                    <a href="signup.html">Sign Up</a></div>
-                </button>
-        </div>
-    </nav>
+    <div id="nav-placeholder"></div>
+    
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
 
     <div>
         <h3 class="title">My Pantry</h3>
